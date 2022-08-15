@@ -1,13 +1,13 @@
 from replit import clear
 
 bids = {}
-
+bidding_finished = False
 def bidding_process():
     name = input("Please enter your name \t")
     bid = float(input("Please Enter your Bid \t"))
     bids[name] = bid
 
-for i in range(0,3000000):
+while bidding_finished is not True:
     a = input("Do you want to make a bid? yes or no \t")
     if(a == "yes"):
         clear()
